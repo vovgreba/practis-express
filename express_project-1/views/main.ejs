@@ -5,15 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
   <h1>Доступні такі товари: </h1>
-  <ul>
-    <li><a href="">Книги</a></li>
-    <li><a href="">Автомобілі</a></li>
-  </ul>
-  <script src="./js/index.js"></script>
+  <div class="product">
+  </div>
+  <form name="person" class="form" method="post" action="/test" enctype="multipart/form-data">
+    <label for="name">Введіть ваше имя</label>
+    <input type="text" id="name" name="name">
+    <label for="lastName">Введіть ваше прізвище</label>
+    <input type="text" id="lastName" name="surname">
+    <label for="years">Введіть вашу дату народження, в форматі: мм.дд.р</label>
+    <input type="text" id="years" name="age">
+    <button type="submit" class="btn">Відправити</button>
+  </form>
+  <script src="js/index.js"></script>
 </body>
 </html>
